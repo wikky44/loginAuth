@@ -19,7 +19,7 @@ class Data {
   UserData? userData;
   String? msg;
 
-  Map<String, dynamic> toJson() {
+    Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     if (token != null) {
       map['token'] = token?.toJson();
@@ -30,5 +30,4 @@ class Data {
     map['msg'] = msg;
     return map;
   }
-
 }
